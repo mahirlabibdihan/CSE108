@@ -15,10 +15,25 @@ public:
 		/* Allocating Memory */
 		int i;
 		mat = (int**)malloc(sizeof(int*)*row);
-		for (i = 0; i < row; i++)
+
+		if(mat!=NULL)	// Checking if memory allocation is successful or not
 		{
-			*(mat + i) = (int*)malloc(sizeof(int) * col);
+			for (i = 0; i < row; i++)
+			{
+				*(mat + i) = (int*)malloc(sizeof(int) * col);
+
+				if(*(mat + i)==NULL)	// Checking if memory allocation is successful or not
+				{
+					cout<<"Memory allocation failed"<<endl;
+					break;	
+				}
+			}
 		}
+		else
+		{
+			cout<<"Memory allocation failed"<<endl;
+		}
+		
 	}
 	~Matrix()
 	{	
@@ -76,7 +91,7 @@ public:
 		{
 			for (j = 0; j < col; j++)
 			{
-				sum += mat[i][j];	   // Summation of all the elements of the matrix
+				sum += mat[i][j];	   // Adding all the elements of the matrix
 			}
 		}
 		return sum;
