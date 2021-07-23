@@ -183,10 +183,7 @@ public class SearchPlayersMenu {
         Map<String,Integer> count = Database.getCountryWisePlayerCount();
         if(count.size()>0) {
             // Printing header
-            System.out.println( "╔═══════════════════════════╦═════════════════════╗" + "\n" +
-                                "║  " + Color.BLUE + "Country               " + Color.RESET + "   ║    " + Color.BLUE + "Total Players" + Color.RESET + "    ║" + "\n" +
-                                "╠═══════════════════════════╬═════════════════════╣"
-                        );
+
 
             // Printing country wise player count
             for (Map.Entry<String, Integer> m : count.entrySet()) {

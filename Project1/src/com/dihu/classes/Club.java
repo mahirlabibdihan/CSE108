@@ -2,6 +2,7 @@ package com.dihu.classes;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class Club {
     private final static int MAX_PLAYER_COUNT = 7;      // Limit of maximum player in a club
@@ -95,6 +96,15 @@ public class Club {
         return 365 * total / 7;     // Total yearly salary
     }
 
+    public void getCountryWisePlayerCount(Map<String, Integer> count){
+        for (Player p : playerList) {
+            if (count.containsKey(p.getCountry())) {
+                count.put(p.getCountry(), count.get(p.getCountry()) + 1);
+            } else {
+                count.put(p.getCountry(), 1);
+            }
+        }
+    }
     public Player searchPlayerByNumber(int number){
         for (Player p : playerList){
             if(p.getNumber()==number){
@@ -104,14 +114,12 @@ public class Club {
         return null;
     }
 
-    public List<Player> searchPlayerBySalaryRange(double start, double end) {
-        List<Player> searchedPlayers = new ArrayList();
+    public void searchPlayerBySalaryRange(double start, double end,List<Player> searchedPlayers) {
             for (Player p : playerList) {
                 if (p.getWeeklySalary() >= start && p.getWeeklySalary() <= end) {
                     searchedPlayers.add(p);
                 }
             }
-        return searchedPlayers;
     }
 
     public void searchPlayerByPosition(String position,List<Player> searchedPlayers) {
@@ -123,15 +131,13 @@ public class Club {
     }
 
 
-    public List<Player> searchPlayerByCountry(String country) {
-        List<Player> searchedPlayers = new ArrayList();
+    public void searchPlayerByCountry(String country,List<Player> searchedPlayers) {
                 for (Player p : playerList) {
                     if (p.getCountry().equalsIgnoreCase(country)) {
                         searchedPlayers.add(p);
                     }
                 }
-        return searchedPlayers;
-    }
+        }
 
     public Player searchPlayerByName(String name) {
             for (Player p : playerList) {

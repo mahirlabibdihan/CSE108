@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="83a96109-a2fd-42dc-bda6-9faeede13a54" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Practice3/src/com/dihu/genus/Arachnid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice3/src/com/dihu/genus/Bird.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice3/src/com/dihu/genus/Fish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice3/src/com/dihu/genus/Mammal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice3/src/com/dihu/genus/Reptile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice3/src/com/dihu/species/Albatross.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice3/src/com/dihu/species/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice3/src/com/dihu/species/EasternBrownSnake.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice3/src/com/dihu/species/FruitBat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice3/src/com/dihu/species/GreatWhiteShark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice3/src/com/dihu/species/Human.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice3/src/com/dihu/species/Platypus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice3/src/com/dihu/species/RedBackSpider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project1/src/com/dihu/IO/Color.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project1/src/com/dihu/IO/Console.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project1/src/com/dihu/classes/Club.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project1/src/com/dihu/classes/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project1/src/com/dihu/data/Database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project1/src/com/dihu/menu/AddPlayerMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project1/src/com/dihu/menu/MainMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project1/src/com/dihu/menu/SearchClubsMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project1/src/com/dihu/menu/SearchPlayersMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1unJ22zMDqjHkSrYuzWMIGC8Qfi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="E:/Class/CSE/Rifat Sir/JavaNetworking" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="83a96109-a2fd-42dc-bda6-9faeede13a54" name="Default Changelist" comment="" />
+      <created>1625295229950</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625295229950</updated>
+    </task>
+    <servers />
+  </component>
+</project>

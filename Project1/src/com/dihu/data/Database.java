@@ -82,13 +82,7 @@ public class Database {
     public static Map<String, Integer> getCountryWisePlayerCount() {
         Map<String, Integer> count = new HashMap();     // Mapping of country and total players of that country
         for (Club c : clubList) {
-            for (Player p : c.getPlayerList()) {
-                if (count.containsKey(p.getCountry())) {
-                    count.put(p.getCountry(), count.get(p.getCountry()) + 1);
-                } else {
-                    count.put(p.getCountry(), 1);
-                }
-            }
+            c.getCountryWisePlayerCount(count);
         }
         return count;
     }
@@ -96,7 +90,7 @@ public class Database {
     public static List<Player> searchPlayerBySalaryRange(double start, double end) {
         List<Player> searchedPlayers = new ArrayList();
         for (Club c : clubList) {
-            searchedPlayers.addAll(c.searchPlayerBySalaryRange(start,end));
+            c.searchPlayerBySalaryRange(start,end,searchedPlayers);
         }
         return searchedPlayers;
     }
@@ -113,7 +107,7 @@ public class Database {
         List<Player> searchedPlayers = new ArrayList();
         for (Club c : clubList) {
             if (c.getName().equalsIgnoreCase(club) || club.equalsIgnoreCase("ANY")) {
-                searchedPlayers.addAll(c.searchPlayerByCountry(country));
+                c.searchPlayerByCountry(country,searchedPlayers);
             }
         }
         return searchedPlayers;
